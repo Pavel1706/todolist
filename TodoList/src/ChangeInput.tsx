@@ -1,3 +1,4 @@
+import TextField from '@material-ui/core/TextField';
 import React, {ChangeEvent, KeyboardEvent, useState} from 'react';
 
 type changeInputType={
@@ -35,7 +36,7 @@ export function ChangeInput(props:changeInputType){
 
 
     return  editMode
-        ?  <input value={title} onBlur={View} onChange={change}
+        ?  <TextField value={title} onBlur={View} onChange={change}
                   onKeyPress={EnterInput} autoFocus/>
         : <span onDoubleClick={Active}>{props.title}</span>
 }
