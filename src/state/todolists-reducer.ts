@@ -2,10 +2,6 @@ import { v1 } from "uuid";
 import {FilterValuesType, TodolistType} from "../App";
 
 
-type ActionType = {
-    type: string
-    [key: string]: any
-}
 
 export const todolistsReducer = (state:Array<TodolistType>, action: tsarType) :Array<TodolistType> => {
     switch (action.type) {
