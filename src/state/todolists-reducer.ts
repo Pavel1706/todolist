@@ -3,6 +3,8 @@ import {FilterValuesType, TodolistType} from "../App";
 
 
 
+
+
 export const todolistsReducer = (state:Array<TodolistType>, action: tsarType) :Array<TodolistType> => {
     switch (action.type) {
         case 'REMOVE-TODOLIST':
